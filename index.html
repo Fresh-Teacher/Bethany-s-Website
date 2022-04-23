@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon-32x32.png">
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        function save(){
+            localStorage.setItem("applepie", true);
+        }
+
+        window.onload = function(){
+            var favourite = document.getElementById("favourite");
+            if(window.localStorage)
+            {
+                var storage = window.localStorage;
+                if(storage.getItem("applepie")== 'true')
+                {
+                    favourite.innerHTML ="Your favourite is Apple pie!";
+                }
+            }
+        }
+    </script>
+    <title>Store for Bethany's Shop</title>
+
+</head>
+
+<body>
+    <header id="mainheader">
+        <nav>
+
+
+            <ul>
+                <li><img src="images/PS_logo.png" height="55" /></li>
+                <li> <a href="index.html">Home</a>
+                </li>
+                <li><a href="pieoverview.html">Pies</a>
+                </li>
+                <li><a href="customers.html">Profile</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <div style="width: 1000px; margin-left: auto;margin-right: auto;">
+        <aside id="leftmenu">
+            <img src="images/SquareFit_20200322_064134.svg" width="100" height="100" alt="logo" />
+            <header>
+                <h4 style="text-align:center;"><a href="#promotions">Browse Our Pies</a></h4>
+            </header>
+            <input type="search" class="searchbox" placeholder="Search our store" />
+        </aside>
+        <main id="main">
+            <article>
+
+                
+                <header>
+                    <h1 style="font-size:40px; color:rgb(0, 4, 255)">Welcome to Bethany's Shop</h1>
+                </header>
+                <figure><img src="images/avatar.jpg" width="300" height="300" alt="Aurthor" />
+                    <figcaption>Image of Fresh Teacher</figcaption>
+                </figure>
+
+                <h2>Our History</h2>
+                <p>We have been <mark> <em>and our clients are <strong>very satisfied</strong></em> </mark> with our
+                    services because we are the best in the region since we provide quality services to customers. <br>
+                <blockquote>Our motto is that we provide quality but not quantity!</blockquote>
+                </p><small>Try shopping at Bethany's and you won't regret even for a single second!</small>
+                <p></p>
+                <button onclick ="save()" type="button">Save as Favourite</button>
+                <span id="favourite"></span>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/mU6anWqZJcc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </article>
+            <section id="promotions">
+                <h3>Our Weekly Promotion</h3>
+                <ol type="a" start="2" end="2">
+                    <li>
+                        <h4>Hot Coffee</h4>
+                    </li>
+                    <li>
+                        <h4>Cold Coffee</h4>
+                    </li>
+                    <h4>
+                        <li>Black Coffee
+                    </h4>
+                    </li>
+                </ol>15,000<sub>10</sub> shs.<br>
+                <img src="images/logo.jpeg" width="500" height="300" />
+            </section>
+        </main>
+        <footer>
+            <p>Our address is:
+            <address>Makerere Kikoni - Kampala Uganda</address>
+            </p>
+            <small>&copy; All rights reserved!</small>
+        </footer>
+    </div>
+</body>
+
+</html>

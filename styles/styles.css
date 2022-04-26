@@ -181,4 +181,18 @@ nav>ul>li>a {
   input:required,
   textarea:required{
     border-style:dashed;
-  }
+ }
+ p{
+     color: rgb(252, 5, 5);
+ }
+ p{
+     font-size: 18px;
+ }
+
+ h3{
+     font-size: 12px;
+ }
+
+ li{
+    font-weight: bold;
+ }

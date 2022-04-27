@@ -1,4 +1,5 @@
 
+
 body {
     margin: 0px;
     font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
@@ -83,7 +84,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     background-color: #e6e4d9;
-    background-image: url('images/rainbow.jpg');
+    background-image: url('images/flag.jpeg');
 }
 
 #mainheader {
@@ -195,4 +196,37 @@ nav>ul>li>a {
 
  li{
     font-weight: bold;
+    line-height: height 30px;
  }
+
+ h1, h2, h3, h4, h5, h6{
+     letter-spacing:6px;
+     font-family:'Cookie', monospace, Arial, sans-serif;
+ }
+
+ h4{
+     text-align: center;
+     text-transform: uppercase;
+ }
+
+ .promotion{
+     background-color: #23cea6;
+     color: rgb(2, 2, 2);
+ }
+
+ .promotion img{
+     width: 50%;
+     border-top: 3px solid #020202;
+     border-right: 3px solid #fc1201;
+     border-left: 3px solid #f9fd08;
+     padding: 5px;
+     margin-bottom:5px;
+ }
+
+ #heading{
+    font-size: 50px;
+ }
+ 
+a:hover{
+    color: rgb(250, 4, 4)
+}

@@ -7,81 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type = "image/png" href="favicon-32x32.png">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
 
-
-    <style>
-        body {
-            margin: 0px;
-            font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: #e6e4d9;
-            background-image: url('images/rainbow.jpg');
-        }
-
-        #mainheader {
-            background-color: #a593c2;
-        }
-
-        nav {
-            height: 60px;
-            width: 1000px;
-            margin: 0 auto 20px;
-        }
-
-        #leftmenu {
-            float: left;
-            width: 30%;
-            margin-bottom: 20px;
-        }
-
-        .searchbox {
-            padding: 5px;
-            margin: 10px 10px;
-            width: 200px;
-        }
-
-        #main {
-            float: right;
-            width: 70%;
-            margin-bottom: 20px;
-        }
-
-        footer {
-            clear: both;
-            width: 100%;
-        }
-
-        header,
-        section,
-        footer,
-        aside,
-        nav,
-        main,
-        article,
-        figure {
-            display: block;
-        }
-
-        nav>ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav>ul>li{
-            float: left;
-        }
-
-        nav>ul>li>a{
-            display: block;
-            color: #fff;
-            text-align: center;
-            padding: 16px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-    </style>
     <script>
         function save(){
             localStorage.setItem("applepie", true);
@@ -123,7 +52,7 @@
         <input name="q">
         <input type="submit">
     </form>
-    <div style="width: 1000px; margin-left: auto;margin-right: auto;">
+    <div class="promotion" style="width: 1000px; margin-left: auto;margin-right: auto;">
         <aside id="leftmenu">
             <img src="images/SquareFit_20200322_064134.svg" width="100" height="100" alt="logo" />
             <header>
@@ -133,7 +62,6 @@
         </aside>
         <main id="main">
             <article>
-
                 
                 <header>
                     <h1 style="font-size:40px; color:rgb(0, 4, 255)">Welcome to Bethany's Shop</h1>
@@ -141,8 +69,7 @@
                 <figure><img src="images/avatar.jpg" width="300" height="300" alt="Aurthor" />
                     <figcaption>Image of Fresh Teacher</figcaption>
                 </figure>
-
-                <h2>Our History</h2>
+                <h2 id="heading">Our History</h2>
                 <p>We have been <mark> <em>and our clients are <strong>very satisfied</strong></em> </mark> with our
                     services because we are the best in the region since we provide quality services to customers. <br>
                 <blockquote>Our motto is that we provide quality but not quantity!</blockquote>
